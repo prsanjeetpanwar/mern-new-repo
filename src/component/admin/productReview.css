@@ -1,0 +1,116 @@
+.productReviewsContainer {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    height: 100vh;
+    animation: fadeIn 0.5s ease-in;
+  }
+  
+  .productReviewsForm {
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding: 3vmax;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    animation: slideIn 0.5s ease-in;
+  }
+  
+  .productReviewsFormHeading {
+    color: rgba(0, 0, 0, 0.733);
+    font: 300 2rem "Roboto";
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .productReviewsForm > div {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin: 1rem 0;
+  }
+  
+  .productReviewsForm > div > input {
+    padding: 1vmax 4vmax;
+    padding-right: 1vmax;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    font: 300 0.9vmax cursive;
+    outline: none;
+  }
+  
+  .productReviewsForm > div > svg {
+    position: absolute;
+    transform: translateX(1vmax);
+    font-size: 1.6vmax;
+    color: rgba(0, 0, 0, 0.623);
+  }
+  
+  @media screen and (max-width: 600px) {
+    .productReviewsContainer {
+      border-left: none;
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    .productReviewsForm {
+      padding: 2vmax;
+    }
+    .productReviewsForm > div > input {
+      padding: 2vmax 4vmax;
+      font-size: 1.7vmax;
+    }
+    .productReviewsForm > div > svg {
+      font-size: 2.8vmax;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Modern Animated CSS */
+  .productReviewsContainer {
+    animation: fadeIn 0.5s ease-in;
+  }
+  
+  .productReviewsForm {
+    animation: slideIn 0.5s ease-in;
+    animation-fill-mode: both;
+  }
+  
+  .productReviewsForm > div {
+    animation: slideIn 0.5s ease-in;
+    animation-fill-mode: both;
+  }
+  
+  .productReviewsForm > div > input {
+    animation: slideIn 0.5s ease-in;
+    animation-fill-mode: both;
+  }
+  
+  .productReviewsForm > div > svg {
+    animation: slideIn 0.5s ease-in;
+    animation-fill-mode: both;
+  }
+  
